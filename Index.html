@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriCore</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>NutriCore</h1>
+        <p class="subtitle">Smart Diet & Nutrition Dashboard</p>
+
+        <div class="card">
+            <h2>Body Metrics</h2>
+
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (cm)">
+            <input type="number" id="age" placeholder="Age">
+
+            <select id="activity">
+                <option value="1.2">Sedentary</option>
+                <option value="1.375">Lightly Active</option>
+                <option value="1.55">Moderately Active</option>
+                <option value="1.725">Very Active</option>
+            </select>
+
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="results">
+            <div class="box">
+                <h3>BMI</h3>
+                <p id="bmi">--</p>
+            </div>
+            <div class="box">
+                <h3>Calories</h3>
+                <p id="calories">--</p>
+            </div>
+            <div class="box">
+                <h3>Macros</h3>
+                <p id="macros">--</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
